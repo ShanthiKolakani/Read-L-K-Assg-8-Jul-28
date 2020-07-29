@@ -1,0 +1,60 @@
+## Difference b/w Console.Read and Console.Readline, Console.ReadKey()....
+
+
+=>Console is predefined class of System namespace. 
+=>Read and Readline() are the Console class methods.
+=>Console.Read  is used to read only single
+character.
+=>Console.Readline is used to read a line or string.
+
+=>Console.ReadKey() Method makes the program wait for a key press and it prevents the screen until a key is pressed. In short, it obtains the next character or any key pressed by the user.
+
+
+
+// Sample program
+
+namespace ConsoleFirstApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+           
+            /* Console.Write(Convert.ToChar(Console.Read()));
+             Console.Write(Convert.ToChar(Console.Read()));
+             Console.Write(Convert.ToChar(Console.Read()));
+
+             Console.Write("-------------------------------------------------------");
+
+Input: Shanthi 
+output:Sha
+
+
+             Console.Write(Console.ReadLine());
+             Console.Write(Console.ReadLine());
+             Console.Write(Console.ReadLine());*/
+
+
+Input:ShantiKolakaniSharoni
+output:ShanthiKolakaniSharoni
+
+
+           
+//ReadKey------------------------------------------------------
+
+            int c = 0;
+            Console.WriteLine("The series is:");
+
+            for (int i = 1; i < 10; i++)
+            {
+                c = c + i;
+                Console.Write(c + " ");
+            }
+
+            Console.WriteLine("\npress any key to exit the process...");
+
+            // basic use of "Console.ReadKey()" method 
+            Console.ReadKey();
+
+output: 1 3 6 10 25...45
+Press any key to exit the process
